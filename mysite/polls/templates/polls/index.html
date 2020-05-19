@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>{{title}}</h1>
+
+
+<p>{{Question_list}}</p>
+
+{% if question_list %}
+{% for question in question_list %}
+<h2><a href=" {% url 'polls:details' question.id %}"> {{question}}</a></h2>
+
+{% endfor %}
+{% else%}
+<p>Nie mamy żadnych pytań</p>
+
+{% endif %}
+{% endblock%}

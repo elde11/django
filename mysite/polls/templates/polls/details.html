@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<nav>
+
+    <a href="{% url 'polls:index' %}">Strona główna</a>
+</nav>
+
+<h1>{{title}}</h1>
+
+
+<p>{{question}}</p>
+{% comment %}
+<!--<form method="POST" action="{% url 'polls:vote' question.id %}">
+    {% csrf_token %}
+    <ol>
+        {% for choice in question.choice_set.all %}
+
+        <li>
+            <label><input type="radio" name="choice" value="{{choice.id}}">
+                {{choice}}</label>
+
+        </li>
+
+        {% endfor %}
+    </ol>
+    <input type="submit" value="Zagłosuj">
+</form> -->
+
+{% endcomment %}
+
+<form method="POST" action="{% url 'polls:vote' question.id %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Zagłosuj">
+
+</form>
+{% endblock %}

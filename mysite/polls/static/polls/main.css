@@ -1,0 +1,82 @@
+body {
+    background-color: rgb(120, 236, 236);
+    font-family: 'Dancing Script', cursive;
+    text-decoration: none;
+    text-align: center;
+    font-style: italic;
+
+}
+
+ol {
+    text-justify: auto;
+    font-size: 24px;
+    text-align: center;
+    justify-content: space-around;
+
+}
+
+li {
+
+    justify-content: space-around;
+    text-align: center;
+    font-size: larger;
+}
+
+a {
+    text-decoration: none;
+    font-size: larger;
+    justify-items: center;
+    text-shadow: 0 0 25px rgb(245, 25, 98);
+}
+
+h1 {
+
+    font-size: 39px;
+}
+
+h2 {
+
+    font-size: 34 px;
+}
+
+P {
+
+    color: blueviolet;
+    font-size: 22px;
+}
+
+.radio {
+
+    justify-content: space-between;
+
+
+}
+
+.label {
+    background-image: url('../../templates/polls/radio.png');
+
+}
+
+input[type="submit"i] {
+    -webkit-appearance: push-button;
+    user-select: none;
+    white-space: pre;
+    align-items: flex-start;
+    text-align: center;
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: rgb(181, 164, 197);
+    box-sizing: border-box;
+    padding: 15px 50px;
+    border-width: 3px;
+    border-color: white;
+    border-radius: 11px;
+    text-transform: unset;
+    transition: 0.8s;
+    text-shadow: powderblue;
+
+}
+
+input[type="submit"i]:hover {
+    color: whitesmoke;
+}
